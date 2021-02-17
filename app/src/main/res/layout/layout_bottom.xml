@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/md_grey_50"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:id="@+id/ll_home"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/whitebackground">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_home"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_home"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Home"
+            android:fontFamily="@font/sans_semibold"
+            android:textSize="14dp"
+            android:textColor="@color/md_grey_500"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_order"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/whitebackground">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_order"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_help" />
+
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Order"
+            android:fontFamily="@font/sans_semibold"
+            android:textSize="14dp"
+            android:textColor="@color/md_grey_500"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_credit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/whitebackground">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_credit"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_wallet" />
+
+        <TextView
+            android:id="@+id/tv_credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Credit"
+            android:textSize="14dp"
+            android:fontFamily="@font/sans_semibold"
+            android:textColor="@color/md_grey_500"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_post"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/whitebackground">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_post"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_paper_plane" />
+
+        <TextView
+            android:id="@+id/tv_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Post"
+            android:textSize="14dp"
+            android:fontFamily="@font/sans_semibold"
+            android:textColor="@color/md_grey_500"/>
+
+    </LinearLayout>
+
+</LinearLayout>

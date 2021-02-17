@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_transport"
+                android:padding="5dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_assignedname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Waiting for Service Provider"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/p_regular"/>
+
+                <TextView
+                    android:id="@+id/tv_servicename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Service Provider"
+                    android:textColor="@color/md_grey_700"
+                    android:fontFamily="@font/p_light"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.2"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 5000"
+                    android:gravity="center"
+                    android:textColor="@color/md_black_1000"
+                    android:fontFamily="@font/p_regular"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:text="Call"
+                    android:drawableLeft="@drawable/ic_call"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/md_white_1000"
+                    android:fontFamily="@font/p_light"
+                    android:background="@drawable/callbutton"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_servicenote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_black_1000"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/p_light"
+            android:text="Service : Water Pipe Damaged"
+            android:maxLines="1"
+            android:layout_below="@+id/ll_layout"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tv_servicenote"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel Request"
+                android:textColor="@color/md_black_1000"
+                android:fontFamily="@font/p_regular"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/p_light"
+                android:gravity="center"
+                android:text="On 06-01-2021    12:00 pm" />
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Services</string>
+
+    <string name="dummytxt">WhatsApp Messenger, or simply WhatsApp, is an American freeware, cross-platform messaging and Voice over IP service owned by Facebook, Inc. It allows users to send text messages and voice messages, make voice and video calls, and share images, documents, user locations, and other media</string>
+
+    <string name="services">
+       Tab,Wash Basin and Shink Problem
+      <br>Bathroom Water Filters</br>
+      <br>Bathroom fittings</br>
+    </string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/md_indigo_900">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_nav"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_nav"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:tint="@color/md_white_1000"/>
+
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hyderabad"
+                android:textColor="@color/md_white_1000"
+                android:fontFamily="@font/sans_semibold"
+                android:layout_toRightOf="@+id/ic_nav"
+                android:layout_marginLeft="20dp"
+                android:textSize="16dp"
+                android:layout_centerVertical="true"/>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_dropdown"
+                android:layout_width="32dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrowdown"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_city"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/iv_profile"
+                android:layout_centerVertical="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_cart"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_notification" />
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:textColor="@color/md_white_1000"
+                    android:background="@drawable/greencircle"
+                    android:layout_marginLeft="18dp"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    android:text="4"/>
+
+
+
+            </RelativeLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/dummy"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <include layout="@layout/layout_bottom"/>
+
+</LinearLayout>
